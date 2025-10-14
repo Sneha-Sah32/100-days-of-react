@@ -1,6 +1,7 @@
 
 import './App.css';
-import Showhide from './components/ShowHidetext/Showhide';
+import Checker from './components/EvenOddChecker/Checker';
+// import Showhide from './components/ShowHidetext/Showhide';
 // import Calculator from './components/Calculator/Calculator';
 //import Todo from './components/todo/Todo';
 //import Wordcounter from './components/Wordcounter/Wordcounter';
@@ -18,7 +19,8 @@ function App() {
       {/* <Wordcounter/> */}
       {/* <Todo/> */}
       {/* <Calculator/> */}
-      <Showhide/>
+      {/* <Showhide/> */}
+      <Checker/>
 
     </div> 
   );
