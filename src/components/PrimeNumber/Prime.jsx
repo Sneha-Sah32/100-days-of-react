@@ -1,15 +1,41 @@
 import React, { useState } from 'react'
 
 const Prime = () => {
-        const [prime,setPrime]=useState();
-        const handleChange=()=>{
-            setPrime()
-        }
+
+  const [num,setNum]=useState('');
+  const [isprime,setIsprime]=useState('');
+
+  const checkprime=(n)=>{
+    if(n<=1){
+      return "not prime";
+    }
+    for(let i=2;i<=Math.sqrt(n);i++){
+      if (n % i===0){
+        return "not prime"
+      }else{
+        return "prime";
+      }
+    }
+  }
+
+  const handleChange=(e)=>{
+    setNum(e.target.value);
+  }
+
+  const handleClick=()=>{
+    const number=parseInt(num);
+    if(!isNaN(number)){
+      setIsprime(checkprime(number))
+    }else{
+
+      setIsprime('')
+    }
+  }
   return (
     <div>
-      <input type="number" placeholder='Enter a number' />
-      <button>Check</button>
-      <p>The given number is:</p>
+      <input type="number" value={num} onChange={handleChange}/>
+      <button onClick={handleClick}>check</button>
+      <p>the given number is: {isprime}</p>
     </div>
   )
 }
