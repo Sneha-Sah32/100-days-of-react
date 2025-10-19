@@ -1,6 +1,7 @@
 
 import './App.css';
-import Prime from './components/PrimeNumber/Prime';
+import Toggler from './components/Toggler/Toggler';
+// import Prime from './components/PrimeNumber/Prime';
 //import Checker from './components/EvenOddChecker/Checker';
 // import Showhide from './components/ShowHidetext/Showhide';
 // import Calculator from './components/Calculator/Calculator';
@@ -22,7 +23,8 @@ function App() {
       {/* <Calculator/> */}
       {/* <Showhide/> */}
       {/* <Checker/> */}
-      <Prime/>
+      {/* <Prime/> */}
+      <Toggler/>
 
     </div> 
   );
