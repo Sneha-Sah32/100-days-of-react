@@ -1,6 +1,7 @@
 
 import './App.css';
-import Toggler from './components/Toggler/Toggler';
+import MoodMaker from './components/Moodmaker/MoodMaker';
+// import Toggler from './components/Toggler/Toggler';
 // import Prime from './components/PrimeNumber/Prime';
 //import Checker from './components/EvenOddChecker/Checker';
 // import Showhide from './components/ShowHidetext/Showhide';
@@ -24,7 +25,8 @@ function App() {
       {/* <Showhide/> */}
       {/* <Checker/> */}
       {/* <Prime/> */}
-      <Toggler/>
+      {/* <Toggler/> */}
+      <MoodMaker/>
 
     </div> 
   );
